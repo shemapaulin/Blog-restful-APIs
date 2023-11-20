@@ -5,6 +5,9 @@ import userLoginSchema from "../Utils/validations/userLoginSchema.js";
 import { encode, getPurePassword } from "../Utils/functions/encodePassword.js";
 import reportJoiError from "../Utils/functions/reportError.js";
 import userAuth from "../middlewares/userAuth.js";
+
+
+
 const userRegistration = async (req, res) => {
   try {
     const inputValidation = userSchema.validate(req.body);
