@@ -6,4 +6,9 @@ const imagePostSchema = Joi.object({
   caption: Joi.string().required()
 });
 
-export default imagePostSchema;
+const commentSchema= Joi.object({
+  user: Joi.string().required(),
+  post: Joi.string().required(),
+  text: Joi.string().max(100).required(),
+})
+export { imagePostSchema,commentSchema};
