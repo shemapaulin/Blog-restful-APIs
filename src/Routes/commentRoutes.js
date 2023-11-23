@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { postComment,getComment,updateComment,deleteComment } from "../Controllers/commentjs";
+import { postComment,getComment,updateComment,deleteComment } from "../Controllers/comment.js";
 
 
 

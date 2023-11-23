@@ -11,4 +11,9 @@ const commentSchema= Joi.object({
   post: Joi.string().required(),
   text: Joi.string().max(100).required(),
 })
-export { imagePostSchema,commentSchema};
+const replySchema=Joi.object({
+  user: Joi.string().required(),
+  comment: Joi.string().required(),
+  text: Joi.string().max(100).required(),
+})
+export { imagePostSchema,commentSchema,replySchema};

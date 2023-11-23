@@ -1,6 +1,6 @@
 import Comment from "../Models/comment.js";
 
-import { commentSchema } from "../Utils/validations/commonValidations.js";
+import {commentSchema }from "../Utils/validations/commonValidations.js";
 import reportJoiError from "../Utils/functions/reportError.js";
 
 
