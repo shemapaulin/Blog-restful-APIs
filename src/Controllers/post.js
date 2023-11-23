@@ -1,7 +1,7 @@
 
 import Post from "../Models/post.js";
 import reportJoiError from "../Utils/functions/reportError.js";
-import imagePostSchema from "../Utils/validations/commonValidations.js";
+import {imagePostSchema}from "../Utils/validations/commonValidations.js";
 import { updateUser } from "./user.js";
 
 
